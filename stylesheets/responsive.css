@@ -994,4 +994,10 @@
     font-size: 48px;
     line-height: 60px;
   }
+  /* Widen the footer to fill body padding */
+  .footer {
+    padding: 70px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
