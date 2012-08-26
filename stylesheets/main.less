@@ -1,0 +1,53 @@
+// Main Stylesheet for Citeplasm.org
+// ---------------------------------
+
+@import 'bootstrap/reset.less';
+@import 'bootstrap/variables.less';
+@import 'bootstrap/mixins.less';
+@import 'bootstrap/type.less';
+@import 'bootstrap/grid.less';
+@import 'bootstrap/layouts.less';
+@import 'bootstrap/scaffolding.less';
+@import 'bootstrap/component-animations.less';
+@import 'bootstrap/navs.less';
+@import 'bootstrap/navbar.less';
+
+
+// Variables
+// ---------
+
+@navbarHeight: 80px;
+
+
+// Layout
+// ------
+
+body {
+    padding-top: @navbarHeight;
+}
+
+
+// Navbar
+// ------
+
+.navbar-inner {
+
+    .brand {
+        padding: 0;
+        margin-top: 25px;
+
+        background-image: url(/images/logo_hover.png);
+        background-repeat: no-repeat;
+
+        img {
+            .transition(opacity .3s ease-in-out);
+            opacity: 100;
+        }
+    }
+    .brand:hover {
+        img {
+            opacity: 0;
+        }
+    }
+}
+
