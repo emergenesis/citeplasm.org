@@ -980,3 +980,18 @@
     background-image: none;
   }
 }
+@media (max-width: 768px) {
+  /* Widen the jumbotron to fill body padding */
+  .jumbotron {
+    padding: 40px 20px;
+    margin-top: -20px;
+    /* Offset bottom margin on .navbar */
+  
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .jumbotron h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}

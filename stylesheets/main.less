@@ -16,7 +16,8 @@
 // Variables
 // ---------
 
-@navbarHeight: 80px;
+@navbarHeight:      80px;
+@sansFontFamily:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 // Layout
@@ -50,4 +51,54 @@ body {
         }
     }
 }
+
+
+// Jumbotron
+// ---------
+
+.jumbotron {
+    position: relative;
+    padding: 40px 0;
+    color: @white;
+    
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+    
+    //#gradient > .horizontal(#660F57, #663366);
+    #gradient > .horizontal(#003366, #5B7290);
+    .box-shadow(0 -3px 7px rgba(0, 0, 0, 0.2) inset);
+
+    h1 {
+        font-size: 80px;
+        font-weight: bold;
+        line-height: 90px;
+        letter-spacing: -1px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(/images/jumbotron-bg.png);
+        background-repeat: repeat;
+        opacity: 0.05;
+    }
+}
+
 

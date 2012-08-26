@@ -621,7 +621,7 @@ address {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -1118,7 +1118,7 @@ a:hover {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -1489,4 +1489,50 @@ body {
 }
 .navbar-inner .brand:hover img {
   opacity: 0;
+}
+.jumbotron {
+  position: relative;
+  padding: 40px 0;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+  background-color: #5b7290;
+  background-image: -moz-linear-gradient(left, #003366, #5b7290);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#003366), to(#5b7290));
+  background-image: -webkit-linear-gradient(left, #003366, #5b7290);
+  background-image: -o-linear-gradient(left, #003366, #5b7290);
+  background-image: linear-gradient(to right, #003366, #5b7290);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff003366', endColorstr='#ff5b7290', GradientType=1);
+  -webkit-box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+}
+.jumbotron h1 {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 90px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.jumbotron p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+}
+.jumbotron:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/images/jumbotron-bg.png);
+  background-repeat: repeat;
+  opacity: 0.05;
 }
