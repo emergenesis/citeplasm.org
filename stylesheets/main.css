@@ -1555,13 +1555,12 @@ body {
   opacity: 0.05;
 }
 .social-bar {
-  margin-bottom: 40px;
   background-color: #EFEFEF;
   border-bottom: 1px solid #DDD;
   padding: 20px 0;
 }
 section {
-  margin-bottom: 40px;
+  padding-top: 80px;
 }
 section.marketing h1 {
   text-align: center;
