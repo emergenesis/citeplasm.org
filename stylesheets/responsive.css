@@ -976,17 +976,17 @@
   .navbar-inner .brand {
     padding: 0;
     margin-top: 25px;
+    margin-bottom: 25px;
     margin-left: 10px;
-    background-image: none;
+  }
+  .navbar-fixed-top {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 768px) {
   /* Widen the jumbotron to fill body padding */
   .jumbotron {
     padding: 40px 20px;
-    margin-top: -20px;
-    /* Offset bottom margin on .navbar */
-  
     margin-right: -20px;
     margin-left: -20px;
   }
