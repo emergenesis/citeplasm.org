@@ -1592,3 +1592,7 @@ section.marketing .row.highlights img {
   margin-top: 70px;
   padding: 70px 0;
 }
+.footer p {
+  font-size: 14px;
+  line-height: 18px;
+}

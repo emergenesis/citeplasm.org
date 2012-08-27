@@ -1003,4 +1003,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  /* The "back to top" link should no longer float right; should be centered */
+  .footer .pull-right {
+    margin-bottom: 20px;
+    float: none;
+  }
 }
