@@ -19,6 +19,8 @@
 
 @navbarHeight:      80px;
 @sansFontFamily:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseFontSize:      16px;
+@baseLineHeight:    28px;
 
 
 // Layout
@@ -102,13 +104,62 @@ body {
     }
 }
 
+// Social Media Links
+// ------------------
+
+.social-bar {
+    margin-bottom: 40px;
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #DDD;
+    padding: 20px 0;
+}
+
+
+// Sections
+// --------
+
+section {
+    margin-bottom: 40px;
+}
+
+section.marketing {
+    h1 {
+        text-align: center;
+        font-weight: 300;
+    }
+
+    h2 {
+        color: @grayLight;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .row.highlights {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        h3 {
+            color: @grayLight;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
 
 // Footer
 // ------
 
 .footer {
     background-color: #EFEFEF;
-    border-top: 1px solid #DFDFDF;
+    border-top: 1px solid #DDD;
     margin-top: 70px;
     padding: 70px 0;
 }

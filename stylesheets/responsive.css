@@ -994,10 +994,13 @@
     font-size: 48px;
     line-height: 60px;
   }
-  /* Widen the footer to fill body padding */
-  .footer {
-    padding: 70px 20px;
+  /* Widen the footer and social bar to fill body padding */
+  /* add horizontal padding to the footer to account for the lack of body padding */
+  .footer,
+  .social-bar {
     margin-left: -20px;
     margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

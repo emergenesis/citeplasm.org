@@ -142,13 +142,13 @@ textarea {
   position: fixed;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 14px;
 }
 .lead {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   font-size: 20px;
   font-weight: 200;
-  line-height: 30px;
+  line-height: 42px;
 }
 small {
   font-size: 85%;
@@ -171,7 +171,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 10px 0;
+  margin: 14px 0;
   font-family: inherit;
   font-weight: bold;
   line-height: 1;
@@ -225,14 +225,14 @@ h4 small {
   font-size: 14px;
 }
 .page-header {
-  padding-bottom: 9px;
-  margin: 20px 0 30px;
+  padding-bottom: 13px;
+  margin: 28px 0 42px;
   border-bottom: 1px solid #eeeeee;
 }
 ul,
 ol {
   padding: 0;
-  margin: 0 0 10px 25px;
+  margin: 0 0 14px 25px;
 }
 ul ul,
 ul ol,
@@ -241,7 +241,7 @@ ol ul {
   margin-bottom: 0;
 }
 li {
-  line-height: 20px;
+  line-height: 28px;
 }
 ul.unstyled,
 ol.unstyled {
@@ -249,17 +249,17 @@ ol.unstyled {
   list-style: none;
 }
 dl {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 dt,
 dd {
-  line-height: 20px;
+  line-height: 28px;
 }
 dt {
   font-weight: bold;
 }
 dd {
-  margin-left: 10px;
+  margin-left: 14px;
 }
 .dl-horizontal dt {
   float: left;
@@ -274,7 +274,7 @@ dd {
   margin-left: 130px;
 }
 hr {
-  margin: 20px 0;
+  margin: 28px 0;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
@@ -289,18 +289,18 @@ abbr.initialism {
 }
 blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 20px;
+  margin: 0 0 28px;
   border-left: 5px solid #eeeeee;
 }
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 35px;
 }
 blockquote small {
   display: block;
-  line-height: 20px;
+  line-height: 28px;
   color: #999999;
 }
 blockquote small:before {
@@ -331,9 +331,9 @@ blockquote:after {
 }
 address {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   font-style: normal;
-  line-height: 20px;
+  line-height: 28px;
 }
 .row {
   margin-left: -20px;
@@ -640,8 +640,8 @@ address {
 body {
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 28px;
   color: #333333;
   background-color: #ffffff;
 }
@@ -697,7 +697,7 @@ a:hover {
 }
 .nav {
   margin-left: 0;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   list-style: none;
 }
 .nav > li > a {
@@ -715,7 +715,7 @@ a:hover {
   padding: 3px 15px;
   font-size: 11px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 28px;
   color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
@@ -749,7 +749,7 @@ a:hover {
 .nav-list .divider {
   *width: 100%;
   height: 1px;
-  margin: 9px 1px;
+  margin: 13px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -791,7 +791,7 @@ a:hover {
 .nav-tabs > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
-  line-height: 20px;
+  line-height: 28px;
   border: 1px solid transparent;
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
@@ -1021,7 +1021,7 @@ a:hover {
 }
 .navbar {
   overflow: visible;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   color: #555555;
   *position: relative;
   *z-index: 2;
@@ -1055,7 +1055,7 @@ a:hover {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 30px 20px 30px;
+  padding: 26px 20px 26px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -1212,7 +1212,7 @@ a:hover {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 30px 15px 30px;
+  padding: 26px 15px 26px;
   color: #555555;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
@@ -1554,9 +1554,42 @@ body {
   background-repeat: repeat;
   opacity: 0.05;
 }
+.social-bar {
+  margin-bottom: 40px;
+  background-color: #EFEFEF;
+  border-bottom: 1px solid #DDD;
+  padding: 20px 0;
+}
+section {
+  margin-bottom: 40px;
+}
+section.marketing h1 {
+  text-align: center;
+  font-weight: 300;
+}
+section.marketing h2 {
+  color: #999999;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+section.marketing .row.highlights {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+section.marketing .row.highlights h3 {
+  color: #999999;
+  font-weight: normal;
+  text-align: center;
+}
+section.marketing .row.highlights img {
+  display: block;
+  margin: 0 auto;
+}
 .footer {
   background-color: #EFEFEF;
-  border-top: 1px solid #DFDFDF;
+  border-top: 1px solid #DDD;
   margin-top: 70px;
   padding: 70px 0;
 }
