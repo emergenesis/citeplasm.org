@@ -1489,6 +1489,45 @@ a:hover {
 .navbar-inverse .btn-navbar.active {
   background-color: #000000 \9;
 }
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+[class^="icon-social-"],
+[class*=" icon-social-"] {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background-position: top left;
+}
+.icon-social-gplus {
+  background-image: url("/images/social-icons/Google-Plus.png");
+}
+.icon-social-twitter {
+  background-image: url("/images/social-icons/Twitter-Bird.png");
+}
+.icon-social-facebook {
+  background-image: url("/images/social-icons/Facebook.png");
+}
+.icon-social-youtube {
+  background-image: url("/images/social-icons/Youtube.png");
+}
+.icon-social-github {
+  background-image: url("/images/social-icons/Github.png");
+}
+.icon-social-flickr {
+  background-image: url("/images/social-icons/Flickr.png");
+}
+.icon-social-rss {
+  background-image: url("/images/social-icons/Rss.png");
+}
 body {
   padding-top: 80px;
 }
@@ -1557,7 +1596,26 @@ body {
 .social-bar {
   background-color: #EFEFEF;
   border-bottom: 1px solid #DDD;
-  padding: 20px 0;
+  text-align: center;
+}
+.social-bar p {
+  margin: 0;
+  line-height: 56px;
+}
+.social-bar a {
+  padding: 18px 10px;
+  border-right: 1px solid #DDD;
+}
+.social-bar a:last-child {
+  margin-right: 0;
+  border-right: none;
+}
+.social-bar a:hover {
+  text-decoration: none;
+}
+.social-bar [class^="icon-social-"],
+.social-bar [class*=" icon-social-"] {
+  margin-right: 4px;
 }
 section {
   padding-top: 80px;

@@ -12,6 +12,7 @@
 @import 'bootstrap/component-animations.less';
 @import 'bootstrap/navs.less';
 @import 'bootstrap/navbar.less';
+@import 'sprites.less';
 
 
 // Variables
@@ -21,6 +22,7 @@
 @sansFontFamily:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @baseFontSize:      16px;
 @baseLineHeight:    28px;
+@iconSocialPath:    "/images/social-icons";
 
 
 // Layout
@@ -110,7 +112,31 @@ body {
 .social-bar {
     background-color: #EFEFEF;
     border-bottom: 1px solid #DDD;
-    padding: 20px 0;
+    text-align: center;
+
+    p {
+        margin: 0;
+        line-height: 56px;
+    }
+
+    a {
+        padding: 18px 10px;
+        border-right: 1px solid #DDD;
+    }
+
+    a:last-child {
+        margin-right: 0;
+        border-right: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    [class^="icon-social-"],
+    [class*=" icon-social-"] {
+        margin-right: 4px;
+    }
 }
 
 

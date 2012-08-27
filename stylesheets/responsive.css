@@ -1009,3 +1009,13 @@
     float: none;
   }
 }
+@media (max-width: 979px) {
+  /* the social links do not need a description */
+  .social-bar .label {
+    display: none;
+  }
+  .social-bar [class^="icon-social-"],
+  .social-bar [class*=" icon-social-"] {
+    margin-right: 0;
+  }
+}

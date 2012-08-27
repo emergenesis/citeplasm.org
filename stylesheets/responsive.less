@@ -18,7 +18,7 @@
 }
 
 
-// Responsive Jumbotron
+// Smartphones
 // --------------------
 @media (max-width: 768px) {
     /* Widen the jumbotron to fill body padding */
@@ -49,4 +49,23 @@
         float: none;
     }
 }
+
+
+// Tablets and Smartphones
+// -----------
+
+@media (max-width: 979px) {
+    /* the social links do not need a description */
+    .social-bar {
+        .label {
+            display: none;
+        }
+        
+        [class^="icon-social-"],
+        [class*=" icon-social-"] {
+            margin-right: 0;
+        }
+    }
+}
+
 
