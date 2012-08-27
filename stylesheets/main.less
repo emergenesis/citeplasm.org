@@ -10,6 +10,7 @@
 @import 'bootstrap/layouts.less';
 @import 'bootstrap/scaffolding.less';
 @import 'bootstrap/component-animations.less';
+@import 'bootstrap/buttons.less';
 @import 'bootstrap/navs.less';
 @import 'bootstrap/navbar.less';
 @import 'sprites.less';
@@ -46,6 +47,10 @@ body {
         margin-bottom: 25px;
         background-image: url("/images/logo.png");
         background-repeat: no-repeat;
+
+        &:hover {
+            background-image: url("/images/logo_hover.png");
+        }
     }
 }
 
@@ -153,6 +158,12 @@ section.marketing {
         line-height: 30px;
     }
 
+    .row.docs {
+        h3 {
+            margin-top: 0;
+        }
+    }
+
     .row.highlights {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -167,6 +178,10 @@ section.marketing {
             display: block;
             margin: 0 auto;
         }
+    }
+
+    .social.nav a:hover {
+        background: none;
     }
 }
 
