@@ -1884,25 +1884,25 @@ input[type="submit"].btn.btn-mini {
   background-position: top left;
 }
 .icon-social-gplus {
-  background-image: url("/images/social-icons/Google-Plus.png");
+  background-image: url("../media/social-icons/Google-Plus.png");
 }
 .icon-social-twitter {
-  background-image: url("/images/social-icons/Twitter-Bird.png");
+  background-image: url("../media/social-icons/Twitter-Bird.png");
 }
 .icon-social-facebook {
-  background-image: url("/images/social-icons/Facebook.png");
+  background-image: url("../media/social-icons/Facebook.png");
 }
 .icon-social-youtube {
-  background-image: url("/images/social-icons/Youtube.png");
+  background-image: url("../media/social-icons/Youtube.png");
 }
 .icon-social-github {
-  background-image: url("/images/social-icons/Github.png");
+  background-image: url("../media/social-icons/Github.png");
 }
 .icon-social-flickr {
-  background-image: url("/images/social-icons/Flickr.png");
+  background-image: url("../media/social-icons/Flickr.png");
 }
 .icon-social-rss {
-  background-image: url("/images/social-icons/Rss.png");
+  background-image: url("../media/social-icons/Rss.png");
 }
 body {
   padding-top: 80px;
@@ -1913,11 +1913,11 @@ body {
   padding: 0;
   margin-top: 25px;
   margin-bottom: 25px;
-  background-image: url("/images/logo.png");
+  background-image: url("../media/logo.png");
   background-repeat: no-repeat;
 }
 .navbar-inner .brand:hover {
-  background-image: url("/images/logo_hover.png");
+  background-image: url("../media/logo_hover.png");
 }
 .jumbotron {
   position: relative;
@@ -1961,7 +1961,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(/images/jumbotron-bg.png);
+  background-image: url(../media/jumbotron-bg.png);
   background-repeat: repeat;
   opacity: 0.05;
 }

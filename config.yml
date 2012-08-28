@@ -1,0 +1,12 @@
+---
+# Usage: http://ruhoh.com/usage/configure/
+
+RuhohSpec: '1.0'
+theme : citeplasm
+production_url : http://citeplasm.org
+
+pages:
+  permalink: 'pretty'
+  layout: 'default'
+  exclude: ['less$', 'sw.$', '~$']
+

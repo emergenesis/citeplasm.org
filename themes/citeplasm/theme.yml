@@ -1,0 +1,27 @@
+{
+  "exclude": [
+    "*.less"
+  ],
+
+  "stylesheets" : {
+    "default" : [
+      "main.css",
+      "responsive.css"
+    ]
+  },
+
+  "javascripts" : {
+    "default" : [
+      "jquery-1.8.0.min.js",
+      "bootstrap-transition.js",
+      "bootstrap-collapse.js",
+      "bootstrap-scrollspy.js"
+      
+    ]
+  },
+  
+  "manifest" : {
+    "author" : "Josh David Miller",
+    "website" : "http://github.com/emergenesis/citeplasm.org"
+  }
+}
