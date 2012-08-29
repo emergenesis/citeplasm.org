@@ -2001,6 +2001,7 @@ body {
   margin-right: 4px;
 }
 .subnav {
+  width: 240px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -2010,7 +2011,6 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
 }
 .subnav.affix {
-  width: 240px;
   top: 120px;
 }
 .subnav li:first-child a {

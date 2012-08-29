@@ -155,8 +155,9 @@ body {
 // ------------------
 
 .subnav {
+    width: (@gridColumnWidth * 3) + (@gridGutterWidth * 3);
+    
     &.affix {
-        width: (@gridColumnWidth * 3) + (@gridGutterWidth * 3);
         top: @navbarHeight + 40px;
     }
 
