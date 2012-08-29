@@ -1919,11 +1919,13 @@ body {
 .navbar-inner .brand:hover {
   background-image: url("../media/logo_hover.png");
 }
-.jumbotron {
+.navbar-inner .btn {
+  margin-top: 22px;
+}
+.masthead {
   position: relative;
-  padding: 40px 0;
+  padding: 20px 0;
   color: #ffffff;
-  text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
   background-color: #5b7290;
   background-image: -moz-linear-gradient(left, #003366, #5b7290);
@@ -1937,23 +1939,22 @@ body {
   -moz-box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
 }
-.jumbotron h1 {
-  font-size: 80px;
+.masthead h1 {
+  font-size: 60px;
   font-weight: bold;
-  line-height: 90px;
+  line-height: 70px;
   letter-spacing: -1px;
-  margin-bottom: 20px;
 }
-.jumbotron p {
+.masthead p {
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
 }
-.jumbotron .container {
+.masthead .container {
   position: relative;
   z-index: 2;
 }
-.jumbotron:after {
+.masthead:after {
   content: "";
   display: block;
   position: absolute;
@@ -1964,6 +1965,14 @@ body {
   background-image: url(../media/jumbotron-bg.png);
   background-repeat: repeat;
   opacity: 0.05;
+}
+.jumbotron {
+  padding: 40px 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 80px;
+  line-height: 90px;
 }
 .social-bar {
   background-color: #EFEFEF;

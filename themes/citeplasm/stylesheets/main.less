@@ -52,30 +52,31 @@ body {
             background-image: url("../media/logo_hover.png");
         }
     }
+
+    .btn {
+        .navbarVerticalAlign(36px); // Vertically center in navbar
+    }
 }
 
 
-// Jumbotron
-// ---------
+// Masthead & Jumbotron
+// --------------------
 
-.jumbotron {
+.masthead {
     position: relative;
-    padding: 40px 0;
+    padding: 20px 0;
     color: @white;
     
-    text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
     
-    //#gradient > .horizontal(#660F57, #663366);
     #gradient > .horizontal(#003366, #5B7290);
     .box-shadow(0 -3px 7px rgba(0, 0, 0, 0.2) inset);
 
     h1 {
-        font-size: 80px;
+        font-size: 60px;
         font-weight: bold;
-        line-height: 90px;
+        line-height: 70px;
         letter-spacing: -1px;
-        margin-bottom: 20px;
     }
 
     p {
@@ -100,6 +101,16 @@ body {
         background-image: url(../media/jumbotron-bg.png);
         background-repeat: repeat;
         opacity: 0.05;
+    }
+}
+
+.jumbotron {
+    padding: 40px 0;
+    text-align: center;
+    
+    h1 {
+        font-size: 80px;
+        line-height: 90px;
     }
 }
 

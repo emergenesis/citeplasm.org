@@ -1,7 +1,39 @@
 ---
 title: Citeplasm.org
 ---
-<div id="home" class="jumbotron">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+ 
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+ 
+            <!-- Be sure to leave the brand out there if you want it shown -->
+            <a class="brand" href="/"></a>
+ 
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#docs">Documentation</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $("body").scrollspy({target: ".navbar"});
+    });
+</script>
+
+<div id="home" class="masthead jumbotron">
     <div class="container">
         <h1>Citeplasm&trade;</h1>
         <p>
@@ -102,7 +134,7 @@ title: Citeplasm.org
                 </p>
                 <p>
                     <a href="#" class="btn btn-primary">See a Demo &raquo;</a>
-                    <a href="#" class="btn">Read the Docs &raquo;</a>
+                    <a href="/docs" class="btn">Read the Docs &raquo;</a>
                 </p>
             </div>
             <div class="span6">
