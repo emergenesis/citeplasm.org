@@ -24,6 +24,8 @@
 @baseFontSize:      16px;
 @baseLineHeight:    28px;
 @iconSocialPath:    "../media/social-icons";
+@linkColor:         #5B7290;
+@btnPrimaryBackgroundHighlight: #003366;
 
 
 // Layout
@@ -64,6 +66,7 @@ body {
 
 .masthead {
     position: relative;
+    margin-bottom: 40px;
     padding: 20px 0;
     color: @white;
     
@@ -105,6 +108,7 @@ body {
 }
 
 .jumbotron {
+    margin-bottom: 0;
     padding: 40px 0;
     text-align: center;
     
@@ -147,15 +151,45 @@ body {
     }
 }
 
+// Affixed Navigation
+// ------------------
+
+.subnav {
+    &.affix {
+        width: (@gridColumnWidth * 3) + (@gridGutterWidth * 3);
+        top: @navbarHeight + 40px;
+    }
+
+    .border-radius(6px);
+    border: 1px solid @grayLighter;
+    .box-shadow(0 1px 4px rgba(0, 0, 0, 0.067));
+
+    li:first-child a {
+        .border-top-left-radius(6px);
+        .border-top-right-radius(6px);
+    }
+
+    li:larst-child a {
+        .border-bottom-left-radius(6px);
+        .border-bottom-right-radius(6px);
+    }
+
+    .chevron {
+        float: right;
+    }
+}
+
+.span3 {
+    min-height: 1px;
+}
+
 
 // Sections
 // --------
 
-section {
-    padding-top: 80px;
-}
-
 section.marketing {
+    padding-top: 80px;
+    
     h1 {
         text-align: center;
         font-weight: 300;
