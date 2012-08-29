@@ -979,18 +979,26 @@
     margin-bottom: 25px;
     margin-left: 10px;
   }
+  .navbar-inner .nav-collapse .btn {
+    float: none;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .navbar-inner .btn .text {
+    display: none;
+  }
   .navbar-fixed-top {
     margin-bottom: 0;
   }
 }
 @media (max-width: 768px) {
   /* Widen the jumbotron to fill body padding */
-  .jumbotron {
+  .masthead {
     padding: 40px 20px;
     margin-right: -20px;
     margin-left: -20px;
   }
-  .jumbotron h1 {
+  .masthead h1 {
     font-size: 48px;
     line-height: 60px;
   }
@@ -1007,6 +1015,12 @@
   .footer .pull-right {
     margin-bottom: 20px;
     float: none;
+  }
+  /* The subnav should no longer affix */
+  .subnav.affix {
+    position: static;
+    width: auto;
+    top: 0;
   }
 }
 @media (max-width: 979px) {
