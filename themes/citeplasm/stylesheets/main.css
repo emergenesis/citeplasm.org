@@ -1948,9 +1948,9 @@ body {
 }
 .masthead p {
   margin-bottom: 28px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 36px;
 }
 .masthead .container {
   position: relative;
@@ -1975,7 +1975,8 @@ body {
 }
 .jumbotron h1 {
   font-size: 80px;
-  line-height: 90px;
+  line-height: 100px;
+  margin-bottom: 20px;
 }
 .social-bar {
   background-color: #EFEFEF;
@@ -2065,6 +2066,9 @@ section.marketing .row.highlights h3 {
 section.marketing .row.highlights img {
   display: block;
   margin: 0 auto;
+}
+section.marketing .row.highlights p {
+  text-align: center;
 }
 section.marketing .social.nav a:hover {
   background: none;
