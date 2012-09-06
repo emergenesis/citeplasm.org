@@ -16,7 +16,8 @@
       "bootstrap-transition.js",
       "bootstrap-collapse.js",
       "bootstrap-affix.js",
-      "bootstrap-scrollspy.js"
+      "bootstrap-scrollspy.js",
+      "bootstrap-tab.js"
     ]
   },
   
