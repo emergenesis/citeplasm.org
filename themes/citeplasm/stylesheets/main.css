@@ -1904,6 +1904,12 @@ input[type="submit"].btn.btn-mini {
 .icon-social-rss {
   background-image: url("../media/social-icons/Rss.png");
 }
+.wizard .wizard-pane {
+  display: none;
+}
+.wizard .wizard-pane.active {
+  display: block;
+}
 body {
   padding-top: 80px;
 }

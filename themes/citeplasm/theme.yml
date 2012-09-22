@@ -1,6 +1,7 @@
 {
   "exclude": [
-    "*.less"
+    "*.less",
+    "*.coffee"
   ],
 
   "stylesheets" : {
@@ -17,7 +18,8 @@
       "bootstrap-collapse.js",
       "bootstrap-affix.js",
       "bootstrap-scrollspy.js",
-      "bootstrap-tab.js"
+      "jquery-wizard.js",
+      "demo.js"
     ]
   },
   
