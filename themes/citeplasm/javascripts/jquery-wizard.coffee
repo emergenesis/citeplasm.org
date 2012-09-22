@@ -57,24 +57,44 @@ wizard =
 
     next: () ->
         return @each () ->
-            console.log 'Advancing to next next pane.'
+            log 'Advancing to the next pane.'
             $this = $(this)
             $panes = $('.wizard-pane', $this)
             $active = $ '.active', $this
-            console.log $active
 
             if !$active?
                 $.error 'Wizard was not initiated!'
                 return
             
-            active_id = $active.attr 'id'
             $next = $active.next('.wizard-pane')
-            console.log $next
             if $next.length isnt 1
                 log 'There is no next pane.'
                 return
 
             $this.wizard 'show', $next.attr('id')
+
+    prev: () ->
+        return @each () ->
+            log 'Going back to the previous pane.'
+            $this = $(this)
+            $panes = $('.wizard-pane', $this)
+            settings = $this.data 'wizardSettings'
+            $active = $ '.active', $this
+            
+            if !$active?
+                $.error 'Wizard was not initiated!'
+                return
+            
+            $prev = $active.prev('.wizard-pane')
+            if $prev.length isnt 1
+                log 'There is no previous pane.'
+                return
+                
+            pane = get_pane $active.attr('id'), settings.panes
+            if pane?
+                pane.undo()
+
+            $this.wizard 'show', $prev.attr('id')
 
     show: (id) ->
         return @each () ->
@@ -99,6 +119,18 @@ wizard =
                 if pane?
                     pane.do()
             
+                # If there is no next or previous pane, disable any next buttons.
+                # FIXME this disables _all_ buttons, rather than ones tied just
+                # to this wizard.
+                if $target_pane.next('.wizard-pane').length isnt 1
+                    $('[data-wizard-action="next"]').addClass 'disabled'
+                else
+                    $('[data-wizard-action="next"]').removeClass 'disabled'
+                if $target_pane.prev('.wizard-pane').length isnt 1
+                    $('[data-wizard-action="prev"]').addClass 'disabled'
+                else
+                    $('[data-wizard-action="prev"]').removeClass 'disabled'
+            
             if transition 
                 $active_pane.one($.support.transition.end, next)
             else
@@ -120,6 +152,19 @@ $.fn.wizard = (method) ->
 $ () ->
     $('body').on 'click.wizard.data-api', '[data-wizard-action="next"]', (e) ->
         e.preventDefault()
-        target = $ $(this).data('target')
-        target.wizard('next')
+        $this = $(this)
+        if $this.hasClass 'disabled'
+            log 'Button is disabled.'
+        else
+            target = $ $this.data('target')
+            target.wizard('next')
+    
+    $('body').on 'click.wizard.data-api', '[data-wizard-action="prev"]', (e) ->
+        e.preventDefault()
+        $this = $(this)
+        if $this.hasClass 'disabled'
+            log 'Button is disabled.'
+        else
+            target = $ $this.data('target')
+            target.wizard('prev')
 

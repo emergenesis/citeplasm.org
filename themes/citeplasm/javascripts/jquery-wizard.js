@@ -54,24 +54,45 @@ wizard = {
   },
   next: function() {
     return this.each(function() {
-      var $active, $next, $panes, $this, active_id;
-      console.log('Advancing to next next pane.');
+      var $active, $next, $panes, $this;
+      log('Advancing to the next pane.');
       $this = $(this);
       $panes = $('.wizard-pane', $this);
       $active = $('.active', $this);
-      console.log($active);
       if (!($active != null)) {
         $.error('Wizard was not initiated!');
         return;
       }
-      active_id = $active.attr('id');
       $next = $active.next('.wizard-pane');
-      console.log($next);
       if ($next.length !== 1) {
         log('There is no next pane.');
         return;
       }
       return $this.wizard('show', $next.attr('id'));
+    });
+  },
+  prev: function() {
+    return this.each(function() {
+      var $active, $panes, $prev, $this, pane, settings;
+      log('Going back to the previous pane.');
+      $this = $(this);
+      $panes = $('.wizard-pane', $this);
+      settings = $this.data('wizardSettings');
+      $active = $('.active', $this);
+      if (!($active != null)) {
+        $.error('Wizard was not initiated!');
+        return;
+      }
+      $prev = $active.prev('.wizard-pane');
+      if ($prev.length !== 1) {
+        log('There is no previous pane.');
+        return;
+      }
+      pane = get_pane($active.attr('id'), settings.panes);
+      if (pane != null) {
+        pane.undo();
+      }
+      return $this.wizard('show', $prev.attr('id'));
     });
   },
   show: function(id) {
@@ -92,7 +113,17 @@ wizard = {
         }
         pane = get_pane(id, settings.panes);
         if (pane != null) {
-          return pane["do"]();
+          pane["do"]();
+        }
+        if ($target_pane.next('.wizard-pane').length !== 1) {
+          $('[data-wizard-action="next"]').addClass('disabled');
+        } else {
+          $('[data-wizard-action="next"]').removeClass('disabled');
+        }
+        if ($target_pane.prev('.wizard-pane').length !== 1) {
+          return $('[data-wizard-action="prev"]').addClass('disabled');
+        } else {
+          return $('[data-wizard-action="prev"]').removeClass('disabled');
         }
       };
       if (transition) {
@@ -116,10 +147,26 @@ $.fn.wizard = function(method) {
 };
 
 $(function() {
-  return $('body').on('click.wizard.data-api', '[data-wizard-action="next"]', function(e) {
-    var target;
+  $('body').on('click.wizard.data-api', '[data-wizard-action="next"]', function(e) {
+    var $this, target;
     e.preventDefault();
-    target = $($(this).data('target'));
-    return target.wizard('next');
+    $this = $(this);
+    if ($this.hasClass('disabled')) {
+      return log('Button is disabled.');
+    } else {
+      target = $($this.data('target'));
+      return target.wizard('next');
+    }
+  });
+  return $('body').on('click.wizard.data-api', '[data-wizard-action="prev"]', function(e) {
+    var $this, target;
+    e.preventDefault();
+    $this = $(this);
+    if ($this.hasClass('disabled')) {
+      return log('Button is disabled.');
+    } else {
+      target = $($this.data('target'));
+      return target.wizard('prev');
+    }
   });
 });
