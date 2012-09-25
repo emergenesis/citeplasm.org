@@ -19,6 +19,8 @@
       "bootstrap-affix.js",
       "bootstrap-scrollspy.js",
       "jquery-wizard.js",
+      "d3.v2.min.js",
+      "scholarship-graph-demo.js",
       "demo.js"
     ]
   },
