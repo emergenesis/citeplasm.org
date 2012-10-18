@@ -1912,6 +1912,35 @@ input[type="submit"].btn.btn-mini {
 .alert-block p + p {
   margin-top: 5px;
 }
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+.well-large {
+  padding: 24px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.well-small {
+  padding: 9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
 [class^="icon-"],
 [class*=" icon-"] {
   display: inline-block;
@@ -1925,31 +1954,29 @@ input[type="submit"].btn.btn-mini {
 }
 [class^="icon-social-"],
 [class*=" icon-social-"] {
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
   background-position: top left;
 }
 .icon-social-gplus {
-  background-image: url("../media/social-icons/Google-Plus.png");
+  background-image: url("../media/social-icons/32x32/googleplusalt.png");
 }
 .icon-social-twitter {
-  background-image: url("../media/social-icons/Twitter-Bird.png");
+  background-image: url("../media/social-icons/32x32/twitter.png");
 }
 .icon-social-facebook {
-  background-image: url("../media/social-icons/Facebook.png");
+  background-image: url("../media/social-icons/32x32/facebook.png");
 }
 .icon-social-youtube {
-  background-image: url("../media/social-icons/Youtube.png");
+  background-image: url("../media/social-icons/32x32/youtube.png");
 }
 .icon-social-github {
-  background-image: url("../media/social-icons/Github.png");
+  background-image: url("../media/social-icons/32x32/github.png");
 }
-.icon-social-flickr {
-  background-image: url("../media/social-icons/Flickr.png");
-}
-.icon-social-rss {
-  background-image: url("../media/social-icons/Rss.png");
+.icon-social-pinterest {
+  background-image: url("../media/social-icons/32x32/pinterest.png");
 }
 .wizard .wizard-pane {
   display: none;
@@ -2151,6 +2178,12 @@ body {
 .span3 {
   min-height: 1px;
 }
+section.comingsoon {
+  padding-top: 80px;
+}
+section.comingsoon .well {
+  text-align: center;
+}
 section.marketing {
   padding-top: 80px;
 }
@@ -2183,6 +2216,9 @@ section.marketing .row.highlights img {
 }
 section.marketing .row.highlights p {
   text-align: center;
+}
+section.marketing .social.nav li {
+  line-height: 38px;
 }
 section.marketing .social.nav a:hover {
   background: none;
