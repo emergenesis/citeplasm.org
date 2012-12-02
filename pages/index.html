@@ -40,11 +40,6 @@ title: Citeplasm.org
             An end-to-end, thoroughly modern research stack built on the
             world's largest graph of open data.
         </p>
-        <p>
-            <a class="btn btn-info btn-large" href="/demo">Start the Demo!</a>
-            &nbsp;&nbsp;
-            <a class="btn btn btn-large" href="/docs">Learn More &raquo;</a>
-        </p>
     </div>
 </div>
 
@@ -53,27 +48,27 @@ title: Citeplasm.org
         <p>
             <a href="http://www.facebook.com/emergenesis">
                 <i class="icon-social-facebook"></i>
-                <span class="label">Like Us</span>
+                <span class="label">Facebook</span>
             </a>
             <a href="http://gplus.to/emergenesis">
                 <i class="icon-social-gplus"></i>
-                <span class="label">+1 Us</span>
+                <span class="label">Google+</span>
             </a>
             <a href="http://twitter.com/emergenesis">
                 <i class="icon-social-twitter"></i>
-                <span class="label">Follow Us</span>
+                <span class="label">Twitter</span>
             </a>
             <a href="http://youtube.com/emergenesis">
                 <i class="icon-social-youtube"></i>
-                <span class="label">Watch Us</span>
+                <span class="label">YouTube</span>
             </a>
-            <a href="http://flickr.com/photos/emergenesis">
-                <i class="icon-social-flickr"></i>
-                <span class="label">See Our Pics</span>
+            <a href="http://pinterest.com/emergenesis">
+                <i class="icon-social-pinterest"></i>
+                <span class="label">Pinterest</span>
             </a>
             <a href="http://github.com/emergenesis">
                 <i class="icon-social-github"></i>
-                <span class="label">Fork Us</span>
+                <span class="label">Github</span>
             </a>
         </p>
     </div>
@@ -145,12 +140,10 @@ title: Citeplasm.org
                     mind.
                 </p>
                 <p>
-                    To understand the true value of these webs, try out our
-                    interactive demonstration of Scholarship Graph, or read
-                    our design docs.
+                    To understand the true value of these webs, click the link
+                    below to read our design docs.
                 </p>
                 <p>
-                    <a href="/demo" class="btn btn-primary">See a Demo &raquo;</a>
                     <a href="/docs" class="btn">Read the Docs &raquo;</a>
                 </p>
             </div>
@@ -198,8 +191,8 @@ title: Citeplasm.org
                                 <i class="icon-social-youtube"></i>
                                 <span class="label">Watch Us</span>
                             </a></li>
-                            <li><a href="http://flickr.com/photos/emergenesis">
-                                <i class="icon-social-flickr"></i>
+                            <li><a href="http://pinterest.com/emergenesis">
+                                <i class="icon-social-pinterest"></i>
                                 <span class="label">See Our Pics</span>
                             </a></li>
                             <li><a href="http://github.com/emergenesis">
@@ -220,12 +213,20 @@ title: Citeplasm.org
                      development site.
                 </p>
                 <p>
-                    <a href="http://emergenesis.com/contact" class="btn btn-primary">Send Us an Email &raquo;</a>
-                    <a href="http://phabricator.emergenesis.com" class="btn">Contribute &raquo;</a>
+                    <a href="http://emergenesis.com" class="btn btn-primary support-email">Send Us an Email &raquo;</a>
+                    <a href="http://github.com/emergenesis" class="btn">Contribute &raquo;</a>
                 </p>
             </div>
         </div>
     </div>
 </section>
 
+<script type="text/javascript">
+    $(function () {
+        $a = $(".support-email");
+        $a.attr("href", "mailto:");
+        $a.attr("href", $a.attr("href")+"media@");
+        $a.attr("href", $a.attr("href")+"emergenesis.com");
+    });
+</script>
 

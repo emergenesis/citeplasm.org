@@ -23,7 +23,7 @@
 @sansFontFamily:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @baseFontSize:      16px;
 @baseLineHeight:    28px;
-@iconSocialPath:    "../media/social-icons";
+@iconSocialPath:    "../media/social-icons/32x32";
 @linkColor:         #5B7290;
 @btnPrimaryBackgroundHighlight: #003366;
 
@@ -191,6 +191,14 @@ body {
 // Sections
 // --------
 
+section.comingsoon {
+    padding-top: 80px;
+
+    .well {
+        text-align: center;
+    }
+}
+
 section.marketing {
     padding-top: 80px;
     
@@ -233,8 +241,14 @@ section.marketing {
         }
     }
 
-    .social.nav a:hover {
-        background: none;
+    .social.nav {
+        li {
+            line-height: 38px;
+        }
+
+        a:hover {
+            background: none;
+        }
     }
 }
 
@@ -252,6 +266,15 @@ section.marketing {
         font-size: 14px;
         line-height: 18px;
     }
+}
+
+
+// Graph Demo
+// ----------
+
+.graph.active {
+    border-color: #E5E5E5;
+    .border-radius(6px);
 }
 
 
