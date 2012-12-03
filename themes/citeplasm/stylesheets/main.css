@@ -1398,7 +1398,7 @@ input[type="submit"].btn.btn-mini {
 .navbar {
   overflow: visible;
   margin-bottom: 28px;
-  color: #555555;
+  color: #777777;
   *position: relative;
   *z-index: 2;
 }
@@ -1435,7 +1435,7 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: #555555;
+  color: #777777;
   text-shadow: 0 1px 0 #ffffff;
 }
 .navbar .brand:hover {
@@ -1446,7 +1446,7 @@ input[type="submit"].btn.btn-mini {
   line-height: 80px;
 }
 .navbar-link {
-  color: #555555;
+  color: #777777;
 }
 .navbar-link:hover {
   color: #333333;
@@ -1589,7 +1589,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 26px 15px 26px;
-  color: #555555;
+  color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -1707,8 +1707,8 @@ input[type="submit"].btn.btn-mini {
   color: #555555;
 }
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #777777;
+  border-bottom-color: #777777;
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
@@ -1864,6 +1864,53 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar:active,
 .navbar-inverse .btn-navbar.active {
   background-color: #000000 \9;
+}
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 28px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+}
+.alert h4 {
+  margin: 0;
+}
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 28px;
+}
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.alert-danger,
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
 }
 [class^="icon-"],
 [class*=" icon-"] {
